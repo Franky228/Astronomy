@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+    <meta charset="utf-8">
+    <title>Astronomy</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="Astr(OLD).js"></script>
+  </head>
+
+  <body>
+    <div id="startPanel" class="Astronomy">
+        <form id="rendered-form">
+          <div class="rendered-form">
+            <input type="hidden" name="hidden-1574668638889" id="hidden-1574668638889">
+            <div class="fb-select form-group field-select-1574668650011">
+              <label style="font-weight: bold; " class="AstronomyLabel">Уровень сложности</label>
+              <select class="AstronomySelect"  id="select-1574668650011">
+                <option  selected="true" id="select-1574668650011-0">Легко</option>
+                <option id="select-1574668650011-1">Средне</option>
+                <option id="select-1574668650011-2">Сложно</option>
+                <option id="select-1574668650011-2">Очень сложно</option>
+              </select>
+              <input type="button" id="singlebutton" name="singlebutton" value="Начать игру" class="buttonStart" onclick="startGame()" onclick="Easy()"/>
+            </div>
+          </div>
+        </form>
+    </div>
+    <div id="CurDIV1"></div>
+    <div id="CurDIV"></div>
+    <canvas id="CursorDD" style="position: absolute;" hidden = "true"></canvas>
+  </body>
+</html>
